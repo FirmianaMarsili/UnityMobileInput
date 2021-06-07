@@ -1,14 +1,21 @@
+[![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)](https://github.com/mopsicus/UnityMobileInput/blob/master/LICENSE) [![GitHub issues](https://img.shields.io/github/issues/mopsicus/UnityMobileInput.svg)](https://GitHub.com/mopsicus/UnityMobileInput/issues/) [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/mopsicus/UnityMobileInput/graphs/commit-activity)
+
 # UnityMobileInput
 Unity Mobile Input Plugin for iOS and Android (Unity UI compatible)
 You can use default InputField UI component on iOS and Android `without additional field` above keyboard
 
 > It's deep refactor and bug fix of UnityNativeEdit (https://github.com/kmbang/UnityNativeEdit)
 
+## Installation
+Add url `https://github.com/mopsicus/UnityMobileInput.git` to Package Manager, or add the following line to Packages/manifest.json: `"ru.mopsicus.mobileinput": "https://github.com/mopsicus/UnityMobileInput.git"`
+
 ## Features
 1. Native input field and keyboard on iOS and Android
 2. Hiding additional mobile input box (Android)
 3. Show "Done", "Clear" buttons (iOS)
-4. Return button type: Default, Next, Done, Search 
+4. Return button type: Default, Next, Done, Search, Send
+5. Detect keyboard show/hide (with height) 
+6. Custom fonts support
 
 ## How to use
 1. Copy the files into your existing unity project asset folder
@@ -31,6 +38,12 @@ You can use default InputField UI component on iOS and Android `without addition
             ...
 </activity>
 ```
+
+## How to use custom fonts
+1. Copy font TTF to StreamingAssets folder
+2. Input font name in property instead "default"
+3. You are cool
+
 
 ## Demo
 Open Demo scene and build, to try how it works
